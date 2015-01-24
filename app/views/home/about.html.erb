@@ -1,0 +1,19 @@
+<p><%= image_tag("new_profile.jpg", height: "100", class: "profile") %></p>
+
+<p>
+  <div class="social-icon"><a href="https://github.com/tchiao" class="social-icon github" target="_blank"></a></div>
+
+  <div class="social-icon"><a href="https://www.linkedin.com/in/tiffanychiao" target="_blank" class="social-icon linkedin"></a></div>
+</p>
+
+<div class="about-me">
+  <p>
+    Hi there! I'm Tiffany Chiao. I'm a Ruby on Rails and Javascript developer. Contact me at <span id="secret"></span>
+  </p>
+</div>
+
+<script>
+var parts = ["tiffany", "a", "chiao", "il.com", "gma", "mailto", ":", 64, "."];
+document.getElementById("secret").innerHTML = "<a href='" + parts[5] + parts[6] + parts[0] + parts[1] + parts[8] + parts[2] + String.fromCharCode(parts[7]) + parts[4] + parts[3] + "'>" + parts[0] + parts[1] + parts[8] + parts[2] + String.fromCharCode(parts[7]) + parts[4] + parts[3] + "</a>";
+</script>
+

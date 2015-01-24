@@ -1,0 +1,178 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap";
+
+html, body {
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+}
+
+#wrapper {
+  padding:50px 0;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+header {
+  margin-top:-50px;
+}
+
+.header-image {
+  max-width: 100%;
+}
+
+a, a:hover, a:-webkit-any-link {
+  text-decoration:none;
+}
+
+#content {
+  min-height:100%;
+  max-height:100%;
+  width:250px;
+  background-color:#62c8fa;
+  position:absolute;
+}
+
+#page-content {
+  margin-top:30px;
+  margin-left:200px;
+  text-align:center;
+}
+
+.profile {
+  border-radius:100px;
+}
+
+.sidebar-link a {
+  color:white;
+  margin-left:-5px;
+}
+
+
+.sidebar-link {
+  padding:15px 0 15px 30px;
+  transition: background-color 0.15s ease;
+}
+
+.sidebar-link:hover {
+  background-color:white;
+}
+
+.sidebar-link:hover a {
+  color:#62c8fa;
+  text-decoration: none;
+
+}
+
+.project-img {
+  margin:15px;
+  border-bottom:4px solid #e1e1e1;
+  border-right:2px solid #e1e1e1;
+  background-color: white;
+  display:inline-block;
+  height:170px;
+  width:329px;
+}
+
+.empty-img {
+  border:5px dashed #90db2e;
+  margin:15px;
+}
+
+.tickitoff {
+  background-image: image-url('tickitoff.png');
+  background-repeat:no-repeat;
+  background-size: 329px 170px;
+}
+
+.textopedia {
+  background-image: image-url('textopedia.png');
+  background-repeat:no-repeat;
+  background-size: 329px 170px;
+}
+
+.treeline {
+  background-image: image-url('treeline.png');
+  background-repeat:no-repeat;
+  background-size: 329px 170px;
+}
+
+.overlay {
+  background:linear-gradient(rgba(0, 0, 0, 0), rgba(1, 1, 1, 1));
+  text-align:center;
+  height:170px;
+  width:329px;
+  opacity:0;
+  -webkit-transition: opacity .15s ease;
+  -moz-transition: opacity .15s ease;
+}
+
+.tickitoff:hover .overlay, .textopedia:hover .overlay, .treeline:hover .overlay {
+  opacity:0.1;
+}
+
+.social-icon {
+  display:inline-block;
+}
+
+.github {
+  background-image:url('social-icons.png');
+  background-size:80px 20px;
+  background-repeat:no-repeat;
+  background-position:-20px 0;
+  width:20px;height:20px;
+  overflow:hidden;
+}
+
+.github:hover {
+  background-image:url('social-icons.png');
+  background-size:80px 20px;
+  background-repeat:no-repeat;
+  background-position:0 0;
+  width:20px;height:20px;
+  overflow:hidden;
+}
+
+.linkedin {
+  background-image:url('social-icons.png');
+  background-size:80px 20px;
+  background-repeat:no-repeat;
+  background-position:-60px 0;
+  width:20px;height:20px;
+  overflow:hidden;
+}
+
+.linkedin:hover {
+  background-image:url('social-icons.png');
+  background-size:80px 20px;
+  background-repeat:no-repeat;
+  background-position:-40px 0;
+  width:20px;height:20px;
+  overflow:hidden;
+}
+
+.about-me {
+  width:50%;
+  display:inline-block;
+}
+
