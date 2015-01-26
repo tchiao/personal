@@ -86,17 +86,14 @@ a, a:hover, a:-webkit-any-link {
 
 .project-img {
   margin:15px;
-  border-bottom:4px solid #e1e1e1;
-  border-right:2px solid #e1e1e1;
+  border:1px solid #f0f0f0;
+  border-bottom:4px solid #f0f0f0;
+  border-right:2px solid #f0f0f0;
   background-color: white;
   display:inline-block;
-  height:170px;
   width:329px;
-}
+  vertical-align:top;
 
-.empty-img {
-  border:5px dashed #90db2e;
-  margin:15px;
 }
 
 .tickitoff {
@@ -117,6 +114,12 @@ a, a:hover, a:-webkit-any-link {
   background-size: 329px 170px;
 }
 
+.tiffit {
+  background-image: image-url('tiffit.png');
+  background-repeat:no-repeat;
+  background-size: 329px 170px;
+}
+
 .overlay {
   background:linear-gradient(rgba(0, 0, 0, 0), rgba(1, 1, 1, 1));
   text-align:center;
@@ -127,7 +130,7 @@ a, a:hover, a:-webkit-any-link {
   -moz-transition: opacity .15s ease;
 }
 
-.tickitoff:hover .overlay, .textopedia:hover .overlay, .treeline:hover .overlay {
+.tickitoff:hover .overlay, .textopedia:hover .overlay, .treeline:hover .overlay, .tiffit:hover .overlay {
   opacity:0.1;
 }
 
@@ -136,7 +139,7 @@ a, a:hover, a:-webkit-any-link {
 }
 
 .github {
-  background-image:url('social-icons.png');
+  background-image:image-url('social-icons.png');
   background-size:80px 20px;
   background-repeat:no-repeat;
   background-position:-20px 0;
@@ -145,7 +148,7 @@ a, a:hover, a:-webkit-any-link {
 }
 
 .github:hover {
-  background-image:url('social-icons.png');
+  background-image:image-url('social-icons.png');
   background-size:80px 20px;
   background-repeat:no-repeat;
   background-position:0 0;
@@ -154,7 +157,7 @@ a, a:hover, a:-webkit-any-link {
 }
 
 .linkedin {
-  background-image:url('social-icons.png');
+  background-image:image-url('social-icons.png');
   background-size:80px 20px;
   background-repeat:no-repeat;
   background-position:-60px 0;
@@ -163,7 +166,7 @@ a, a:hover, a:-webkit-any-link {
 }
 
 .linkedin:hover {
-  background-image:url('social-icons.png');
+  background-image:image-url('social-icons.png');
   background-size:80px 20px;
   background-repeat:no-repeat;
   background-position:-40px 0;
@@ -176,3 +179,10 @@ a, a:hover, a:-webkit-any-link {
   display:inline-block;
 }
 
+.project-text {
+  padding:15px;
+  font-size:12px;
+  font-weight:300;
+  height:98px;
+  border-top:1px solid #f0f0f0;
+}
