@@ -183,6 +183,14 @@ a, a:hover, a:-webkit-any-link {
   padding:15px;
   font-size:12px;
   font-weight:300;
-  height:98px;
+  height:65px;
   border-top:1px solid #f0f0f0;
+}
+
+.project-text a, #secret a {
+  color:#62c8fa;
+}
+
+.project-text a:hover, #secret a:hover {
+  color:#5cb1dd;
 }
