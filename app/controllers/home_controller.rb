@@ -4,4 +4,5 @@ class HomeController < ApplicationController
 
   def projects
   end
+
 end
