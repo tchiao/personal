@@ -12,25 +12,34 @@
 <body>
   <div id="wrapper">
     <header><%= image_tag("header.png", class: "header-image") %></header>
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    
+    
 
-    <div id="content">
-      <div class="sidebar">
-        <br/>     
-        <div class="sidebar-link"><%= link_to "about", about_path %></div>
-        <div class="sidebar-link"><%= link_to "projects", projects_path %></div>
-        <div class="sidebar-link"><a href="/resume.pdf" target="_blank">resume</a></div>
-        <br/>
+    <div class="container">
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <br/>     
+          <div class="sidebar-link"><%= link_to "about", about_path %></div>
+          <div class="sidebar-link"><%= link_to "projects", projects_path %></div>
+          <div class="sidebar-link"><a href="/resume.pdf" target="_blank">resume</a></div>
+          <br/>
+        </div>
+
+        <div class="col-xs-12 col-sm-9" id="page-content">
+          <div><%= yield %></div>
+        </div>
       </div>
     </div>
-
-    <div id="page-content">
-      <div><%= yield %></div>
-    </div>
-
   </div>
-
   
 </body>
-</html>
 
+</html>
 

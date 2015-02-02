@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+
+$(document).ready(function() {
+  $('[data-toggle=offcanvas]').click(function() {
+    $('.row-offcanvas').toggleClass('active');
+  });
+});
