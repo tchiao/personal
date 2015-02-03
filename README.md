@@ -1,1 +1,1 @@
-(http://www.tiffanychiao.com)
+http://www.tiffanychiao.com
