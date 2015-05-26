@@ -48,7 +48,7 @@ GEM
     daemons (1.1.9)
     debug_inspector (0.0.2)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.0.7)
     execjs (2.2.2)
     hike (1.2.3)
     i18n (0.7.0)
